@@ -8,6 +8,7 @@ import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
 import styles from "./app.module.css";
 import { Transactions } from "./components/Transactions";
+import { Accounts } from "./components/Accounts";
 
 function App() {
   return (
@@ -44,13 +45,7 @@ function App() {
             <Card>
               <Card.Header>Minhas contas</Card.Header>
               <Card.Body>
-                <p>R$ 200</p>
-                <p>R$ 200</p>
-                <p>R$ 200</p>
-                <p>R$ 200</p>
-                <p>R$ 200</p>
-                <p>R$ 200</p>
-                <p>R$ 200</p>
+                <Accounts />
               </Card.Body>
             </Card>
           </section>
