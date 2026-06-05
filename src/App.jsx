@@ -6,8 +6,8 @@ import { Main } from "./components/Main";
 import { SavingsStatus } from "./components/SavingsStatus";
 import { SearchInput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
-
 import styles from "./app.module.css";
+import { Transactions } from "./components/Transactions";
 
 function App() {
   return (
@@ -36,11 +36,13 @@ function App() {
               </Card.Body>
             </Card>
             <Card>
-              <Card.Header>Orçamento diário disponível:</Card.Header>
-              <Card.Body>R$ 200</Card.Body>
+              <Card.Header>Movimentação financeira</Card.Header>
+              <Card.Body>
+                <Transactions />
+              </Card.Body>
             </Card>
             <Card>
-              <Card.Header>Orçamento diário disponível:</Card.Header>
+              <Card.Header>Minhas contas</Card.Header>
               <Card.Body>
                 <p>R$ 200</p>
                 <p>R$ 200</p>
